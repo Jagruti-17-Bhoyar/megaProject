@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reg.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="registrationForm">
+            <h2>Registration Form</h2>
+            <div class="form-group">
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="middleName" placeholder="Middle Name">
+                <input type="text" id="lastName" placeholder="Last Name" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" placeholder="Create Password" required>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+            </div>
+            <div class="form-group">
+                <select id="branch">
+                    <option value="" disabled selected>Select Branch</option>
+                    <option value="cs">Computer Engineering</option>
+                    <option value="ee">Electronic and Telecommunication Engineering</option>
+                    <option value="me">Mechanical Engineering</option>
+                </select>
+                <select id="year">
+                    <option value="" disabled selected>Select Year</option>
+                    <option value="1">First Year</option>
+                    <option value="2">Second Year</option>
+                    <option value="3">Third Year</option>
+                    <option value="4">Fourth Year</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="email-id" name="Email-Id" id="email-id" placeholder="Enter Your College Email-Id  "
+                    required>
+
+            </div>
+            <div class="form-group">
+                <select id="scholarship">
+                    <option value="" disabled selected>Select Scholarship</option>
+                    <option value="merit">No Scholarship</option>
+                    <option value="need">Leela Poonawala Foundation Scholarship</option>
+                    <option value="need">Cummins Nurturing Brilliance Scholarship</option>
+                    <option value="need">Persistant Systems PVT LTD Scholarship</option>
+                    <option value="need">Reliance Scholarship</option>
+                </select>
+                <input type="file" id="scholarshipCertificate" accept=".pdf,.doc,.docx">
+            </div>
+            <div class="form-group">
+                <input type="text" id="cast" placeholder="Cast">
+                <input type="file" id="castCertificate" accept=".pdf,.doc,.docx">
+            </div>
+            <button type="button" onclick="register()">Register</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
